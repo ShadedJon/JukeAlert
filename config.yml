@@ -1,3 +1,4 @@
+# mysql settings.
 mysql:
   username: ''
   host: localhost
@@ -6,19 +7,19 @@ mysql:
   database: minecraft
   port: 3306
   prefix: ''
-# mysql settings.
 settings:
-  defaultCuboidSize: 11
 # how big of a cube the juke will record actions inside of. 11 * 11 * 11 by default.
+  defaultCuboidSize: 11
+# how many entries will be shown on each page of /jainfo.
   logsPerPage: 10
-# how many actions will be shown on each page of /jainfo.
+# if set to anything above 0, it will require a moderator or higher on the namelayer group to visit the JukeBox or Notebox before it is removed this setting applies if actions have occured on the snitch.  
   daysFromLastAdminVisitForLoggedSnitchCulling: 0
-# if set to anything above 0, it will require a moderator or higher on the namelayer group to visit the JukeBox or Notebox before it is removed.
+# if set to anything above 0, it requires the same as above, but this applies to snitches with no logged actions in the specified timeframe.
   daysFromLastAdminVisitForNonLoggedSnitchCulling: 0  
-# unsure
-  allowTriggeringLevers: false
 # allows players to trigger redstone circuits if players enter, logs into, opens chests, places blocks, or breaks blocks within the snitch radius.
-  togglerestartgroupcheck: false
+  allowTriggeringLevers: false
 # unsure
+  togglerestartgroupcheck: false
 mercury:
+# mercury integration for sharding. If set to true will send jukealert messages to all server worlds.
   broadcastallservers: false
