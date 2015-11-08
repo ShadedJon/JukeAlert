@@ -6,12 +6,19 @@ mysql:
   database: minecraft
   port: 3306
   prefix: ''
+# mysql settings.
 settings:
   defaultCuboidSize: 11
+# how big of a cube the juke will record actions inside of. 11 * 11 * 11 by default.
   logsPerPage: 10
+# how many actions will be shown on each page of /jainfo.
   daysFromLastAdminVisitForLoggedSnitchCulling: 0
+# if set to anything above 0, it will require a moderator or higher on the namelayer group to visit the JukeBox or Notebox before it is removed.
   daysFromLastAdminVisitForNonLoggedSnitchCulling: 0  
+# unsure
   allowTriggeringLevers: false
+# allows players to trigger redstone circuits if players enter, logs into, opens chests, places blocks, or breaks blocks within the snitch radius.
   togglerestartgroupcheck: false
+# unsure
 mercury:
   broadcastallservers: false
